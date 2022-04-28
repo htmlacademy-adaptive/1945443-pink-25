@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Валерий Макаров](https://up.htmlacademy.ru/adaptive/25/user/1945443).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
