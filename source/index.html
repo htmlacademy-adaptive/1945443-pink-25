@@ -7,7 +7,9 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__logo header__logo--minimalistic"></div>
+        <div class="header__logo header__logo--minimalistic">
+          <img width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
+        </div>
         <div class="header__burger"></div>
         <nav class="header__navigation">
           <ul class="navigation">
@@ -33,11 +35,17 @@
         <h1 class="visually-hidden">Приложение Pink</h1>
         <span class="index-intro__slogan">Взгляните на жизнь иначе!</span>
         <div class="index-intro__app">
-          <a class="index-intro__download" href="#">Скачать приложение</a>
+          <a class="index-intro__download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <div class="index-intro__icons">
-            <img class="index-intro__icon index-intro__icon--apple" width="47" height="56" src="img/downloads/apple-logo.png" alt="Подходит для apple">
-            <img class="index-intro__icon index-intro__icon--android" width="47" height="56" src="img/downloads/android-logo.png" alt="Подходит для android">
-            <img class="index-intro__icon index-intro__icon--windows" width="47" height="56" src="img/downloads/microsoft-logo.png" alt="Подходит для windows">
+            <a class="index-intro__link" href="https://www.apple.com/ru/app-store/">
+              <img class="index-intro__icon index-intro__icon--apple" width="47" height="56" src="img/downloads/apple-logo.png" alt="Подходит для apple">
+            </a>
+            <a class="index-intro__link" href="https://play.google.com/store?hl=ru&gl=US">
+              <img class="index-intro__icon index-intro__icon--android" width="47" height="56" src="img/downloads/android-logo.png" alt="Подходит для android">
+            </a>
+            <a class="index-intro__link" href="https://www.microsoft.com/ru-tm/store/b/home">
+              <img class="index-intro__icon index-intro__icon--windows" width="47" height="56" src="img/downloads/microsoft-logo.png" alt="Подходит для windows">
+            </a>
           </div>
           <p class="index-intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -105,22 +113,12 @@
       <section class="tariffs">
         <div class="tariffs__grid">
           <h2 class="section-title visually-hidden">Наши тарифы</h2>
-          <ul class="tariffs__headings">
-            <li class="tariff-heading tariff-heading--base">
-              <span class="tariffs__name">База</span>
-              <span class="tariffs__price">1,99 USD</span>
-            </li>
-            <li class="tariff-heading tariff-heading--standart tariff-heading--special">
-              <span class="tariffs__name">Стандарт</span>
-              <span class="tariffs__price">3,99 USD</span>
-            </li>
-            <li class="tariff-heading tariff-heading--unlimited">
-              <span class="tariffs__name">Анлим</span>
-              <span class="tariffs__price">9,99 USD</span>
-            </li>
-          </ul>
           <ul class="tariffs__advantages">
             <li class="tariffs__item tariffs__item--base">
+              <div class="tariff-heading">
+                <span class="tariffs__name">База</span>
+                <span class="tariffs__price">1,99 USD</span>
+              </div>
               <div class="tariff-advantage tariff-advantage--filter tariff-advantage--positive">
                 <span class="tariff-advantage__text">Розовый фильтр</span>
               </div>
@@ -132,6 +130,10 @@
               </div>
             </li>
             <li class="tariffs__item tariffs__item--standart">
+              <div class="tariff-heading tariff-heading--special">
+                <span class="tariffs__name">Стандарт</span>
+                <span class="tariffs__price">3,99 USD</span>
+              </div>
               <div class="tariff-advantage tariff-advantage--filter tariff-advantage--positive">
                 <span class="tariff-advantage__text">Розовый фильтр</span>
               </div>
@@ -143,6 +145,10 @@
               </div>
             </li>
             <li class="tariffs__item tariffs__item--unlimited">
+              <div class="tariff-heading">
+                <span class="tariffs__name">Анлим</span>
+                <span class="tariffs__price">9,99 USD</span>
+              </div>
               <div class="tariff-advantage tariff-advantage--filter tariff-advantage--positive">
                 <span class="tariff-advantage__text">Розовый фильтр</span>
               </div>
@@ -196,7 +202,9 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__logo footer__logo--medium"></div>
+      <div class="footer__logo footer__logo--medium">
+        <img width="74" height="23" src="img/logo/footer-logo-minimal.svg" alt="Приложение Pink">
+      </div>
       <div class="socials">
         <a class="socials__item socials__item--vk" href="#">
           <span class="visually-hidden">Наш Вконтакте</span>
@@ -210,8 +218,8 @@
       </div>
       <div class="developer">
         <span class="developer__text">Разработано</span>
-        <a class="developer__logo" href="#">
-          <span class="visually-hidden">Сайт разработчика</span>
+        <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img width="27" height="34" src="img/logo/developer.svg" alt="Сайт разработчика">
         </a>
       </div>
     </footer>
