@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/1945443-pink-25/3/">
+</head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> <!--  -active for menu-style-->
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo header__logo--minimalistic" href="index.html">
+              <img width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
+            </a>
+            <button class="header__burger">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <nav class="navigation"> <!-- -active for menu-->
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="index.html">Главная</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="catalog.html">Фотографии</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+    <main class="main">
+      <section class="sub-intro">
+        <div class="container">
+          <h1 class="visually-hidden">Каталог фотографий</h1>
+          <span class="sub-intro__slogan">Фотографии пользователей</span>
+        </div>
+      </section>
+      <section class="gallery-intro">
+        <div class="container">
+          <h2 class="visually-hidden">Панорама дня</h2>
+          <p class="intro-text intro-text--catalog">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+        <div class="card card--panoramic">
+          <a class="card__link" href="img/gallery/panoramic/skypark.jpg">
+            <img class="card__image" width="320" height="137" src="img/gallery/panoramic/skypark.jpg" alt="Скайпарк">
+          </a>
+          <div class="container">
+            <div class="card__info">
+              <span class="card__author">Анна</span>
+              <span class="card__time">(5 минут назад)</span>
+              <p class="card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <span class="card__likes">Нравится: 215</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <h2 class="visually-hidden">Галерея</h2>
+        <div class="container">
+          <div class="gallery__inner">
+            <div class="card">
+              <a class="card__link" href="img/gallery/car.jpg">
+                <img class="card__image" width="280" height="180" src="img/gallery/car.jpg" alt="Машина">
+              </a>
+              <div class="card__info">
+                <span class="card__author">Левон</span>
+                <span class="card__time">(5 часов назад)</span>
+                <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <span class="card__likes">Нравится: 356</span>
+              </div>
+            </div>
+            <div class="card">
+              <a class="card__link" href="img/gallery/drums.jpg">
+                <img class="card__image" width="280" height="180" src="img/gallery/drums.jpg" alt="Барабаны">
+              </a>
+              <div class="card__info">
+                <span class="card__author">Антон</span>
+                <span class="card__time">(12 часов назад)</span>
+                <p class="card__text">Соседи будут рады!</p>
+                <span class="card__likes">Нравится: 666</span>
+              </div>
+            </div>
+            <div class="card">
+              <a class="card__link" href="img/gallery/roof.jpg">
+                <img class="card__image" width="280" height="180" src="img/gallery/roof.jpg" alt="Галерея">
+              </a>
+              <div class="card__info">
+                <span class="card__author">Борис</span>
+                <span class="card__time">(20 часов назад)</span>
+                <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <span class="card__likes">Нравится: 215</span>
+              </div>
+            </div>
+            <div class="card">
+              <a class="card__link" href="img/gallery/market.jpg">
+                <img class="card__image" width="280" height="180" src="img/gallery/market.jpg" alt="Рынок">
+              </a>
+              <div class="card__info">
+                <span class="card__author">Сергей</span>
+                <span class="card__time">(25 часов назад)</span>
+                <p class="card__text">Самая кубанская в мире!</p>
+                <span class="card__likes">Нравится: 4</span>
+              </div>
+            </div>
+            <div class="card">
+              <a class="card__link" href="img/gallery/mountains.jpg">
+                <img class="card__image" width="280" height="180" src="img/gallery/mountains.jpg" alt="Горы">
+              </a>
+              <div class="card__info">
+                <span class="card__author">Максим</span>
+                <span class="card__time">(40 часов назад)</span>
+                <p class="card__text">Где снег-то?</p>
+                <span class="card__likes">Нравится: 150</span>
+              </div>
+            </div>
+            <div class="card">
+              <a class="card__link" href="img/gallery/plane.jpg">
+                <img class="card__image" width="280" height="180" src="img/gallery/plane.jpg" alt="Самолет">
+              </a>
+              <div class="card__info">
+                <span class="card__author">Надежда</span>
+                <span class="card__time">(45 часов назад)</span>
+                <p class="card__text">Всем GM и взаимные лайки!</p>
+                <span class="card__likes">Нравится: 2560</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="editor-intro">
+        <div class="container">
+          <h2 class="visually-hidden">Выложите свои фото здесь</h2>
+          <p class="intro-text intro-text--editor">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+      </section>
+
+      <section class="add-photo">
+        <h2 class="visually-hidden">Редактор фото</h2>
+        <div class="container">
+          <form class="editor" action="https://echo.htmlacademy.ru/" method="post">
+            <img class="editor__image" width="280" height="374" src="img/editor/winter.jpg" alt="Фотография для редактирования">
+            <label class="visually-hidden" for="url">Путь к изображению</label>
+            <input class="visually-hidden" type="text" name="url" id="url" value="img/editor/winter.jpg">
+            <div class="editor__tools">
+              <div class="editor__tool editor__tool--cut">
+                <span class="visually-hidden">Обрезать</span>
+              </div>
+              <div class="editor__tool editor__tool--colors">
+                <span class="visually-hidden">Насыщенность</span>
+              </div>
+              <div class="editor__tool editor__tool--contrast">
+                <span class="visually-hidden">Контраст</span>
+              </div>
+            </div>
+            <div class="editor__regulators">
+              <div class="editor__regulator editor__regulator--cut editor__regulator--active">
+                <label class="visually-hidden" for="cut">Обрезать</label>
+                <input class="visually-hidden" type="number" name="cut" id="cut" value="80">
+                <span class="editor__toggle"></span>
+              </div>
+              <div class="editor__regulator editor__regulator--colors">
+                <label class="visually-hidden" for="colors">Насыщенность</label>
+                <input class="visually-hidden" type="number" name="colors" id="colors" value="30">
+                <span class="editor__toggle"></span>
+              </div>
+              <div class="editor__regulator editor__regulator--contrast">
+                <label class="visually-hidden" for="contrast">Контраст</label>
+                <input class="visually-hidden" type="number" name="contrast" id="contrast" value="50">
+                <span class="editor__toggle"></span>
+              </div>
+            </div>
+            <div class="editor__buttons">
+              <button class="editor__submit" type="submit">Запостить</button>
+              <button class="editor__submit editor__submit--cancel" type="button" disabled>Отмена</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="footer__logo footer__logo--medium" href="index.html">
+            <img width="74" height="23" src="img/logo/footer-logo-minimal.svg" alt="Приложение Pink">
+          </a>
+          <div class="socials">
+            <a class="socials__item socials__item--vk" href="#">
+              <span class="visually-hidden">Наш Вконтакте</span>
+            </a>
+            <a class="socials__item socials__item--telegram" href="#">
+              <span class="visually-hidden">Наш Телеграмм</span>
+            </a>
+            <a class="socials__item socials__item--youtube" href="#">
+              <span class="visually-hidden">Наш Ютьюб</span>
+            </a>
+          </div>
+          <div class="developer">
+            <span class="developer__text">Разработано</span>
+            <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <img width="27" height="34" src="img/logo/developer.svg" alt="Сайт разработчика">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  </body>
+</html>
