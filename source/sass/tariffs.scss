@@ -1,0 +1,35 @@
+.tariffs {
+  padding: 96px 0 45px;
+  background: url("../img/tariffs/grey-background.png") center top / cover no-repeat;
+}
+
+.tariffs__grid {
+  position: relative;
+  left: -277px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tariffs__advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 277px);
+  grid-template-rows: 1fr;
+  border: 1px solid #e5e5e5;
+}
+
+.tariffs__options {
+  display: none;
+  // display: grid;
+  // grid-template-rows: repeat(3, 59px);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  background-color: #ffffff;
+}
+
+.tariffs__option {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+

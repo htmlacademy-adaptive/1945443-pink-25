@@ -1,0 +1,33 @@
+.modal-success {
+  display: none;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  padding: 38px 0 0;
+
+  &--active {
+    display: block;
+  }
+}
+
+.modal-success__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.modal-success__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  margin-top: 26px;
+}
+
+.modal-success__confirmation {
+  margin-top: 40px;
+  padding: 49px 0;
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,25 @@
+.reviews {
+  padding: 41px 0;
+}
+
+.reviews__item {
+  display: none;
+  text-align: center;
+
+  &--active {
+    display: block;
+  }
+}
+
+.reviews__author {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 13px;
+}

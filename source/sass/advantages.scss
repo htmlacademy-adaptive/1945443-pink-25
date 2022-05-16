@@ -1,0 +1,25 @@
+.advantages {
+  background: url("../img/advantages/screen.png") right 50% bottom -6px no-repeat, url("../img/advantages/phone.png") right 50% bottom -42px no-repeat, url("../img/advantages/grey-background.png") center top / cover no-repeat;
+  padding: 78px 0 318px;
+}
+
+.advantages__item {
+  text-align: center;
+
+  &:not(:first-child) {
+    margin-top: 31px;
+  }
+}
+
+.advantages__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.advantages__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 12px;
+}
