@@ -623,7 +623,8 @@ body {
 }
 
 .sub-intro {
-  background: #1d384b url("../img/sub-intro.png") cover no-repeat;
+  background: #1d384b url("../img/sub-intro.png") center no-repeat;
+  background-size: cover;
   padding: 95px 0 43px;
   min-height: 237px;
   text-align: center;
