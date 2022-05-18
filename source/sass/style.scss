@@ -1,10 +1,11 @@
 @import "./my-normalize.scss";
-@import "./containers-boxes.scss";
+@import "./container.scss";
+@import "./visually-hidden.scss";
 @import "./fonts.scss";
 @import "./body.scss";
+// index
 @import "./section-title.scss";
 @import "./header.scss";
-@import "./navigation.scss";
 @import "./index-intro.scss";
 @import "./download.scss";
 @import "./ad.scss";

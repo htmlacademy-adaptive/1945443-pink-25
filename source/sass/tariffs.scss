@@ -1,6 +1,30 @@
 .tariffs {
+  position: relative;
   padding: 96px 0 45px;
-  background: url("../img/tariffs/grey-background.png") center top / cover no-repeat;
+
+  &::before {
+    position: absolute;
+    bottom: 99%;
+    left: -40px;
+    z-index: -1;
+    transform: rotate(177deg);
+    display: block;
+    height: 225px;
+    width: 200%;
+    content: "";
+    background-color: #ffffff;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: #f2f2f2;
+  }
 }
 
 .tariffs__grid {
@@ -15,12 +39,16 @@
   grid-template-columns: repeat(3, 277px);
   grid-template-rows: 1fr;
   border: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .tariffs__options {
   display: none;
-  // display: grid;
-  // grid-template-rows: repeat(3, 59px);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;

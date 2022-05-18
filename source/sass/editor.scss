@@ -1,8 +1,8 @@
-.add-photo {
+.editor {
   background-color: #f2f2f2;
 }
 
-.editor {
+.editor__form {
   padding: 20px 0;
 }
 
@@ -19,6 +19,7 @@
   height: 48px;
   background-repeat: no-repeat;
   background-position: center;
+  border: none;
 
   &--cut {
     background-image: url("data:image/svg+xml,%0A%3Csvg width='44' height='44' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z' fill='%23D22856'/%3E%3C/svg%3E%0A");
@@ -111,6 +112,7 @@
   text-align: center;
   padding: 16px 0;
   width: 100%;
+  font-family: inherit;
 
   &:not(:first-child) {
     margin-top: 10px;

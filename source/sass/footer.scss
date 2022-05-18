@@ -1,13 +1,5 @@
 .footer {
   padding: 35px 0 40px;
-
-  .socials {
-    margin-top: 35px;
-  }
-
-  .developer {
-    margin-top: 35px;
-  }
 }
 
 .footer__inner {
@@ -15,7 +7,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  height: 210px;
 }
 
 .footer__logo {

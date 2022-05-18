@@ -1,6 +1,8 @@
 .tariff {
+  position: relative;
   display: grid;
   grid-template-rows: 99px repeat(3, 60px);
+  overflow: hidden;
 }
 
 .tariff__heading {
@@ -13,22 +15,22 @@
   border: 1px solid #e5e5e5;
   padding-top: 12px;
   overflow: hidden;
+}
 
-  &--special::before {
-    position: absolute;
-    top: 17px;
-    left: -23px;
-    display: block;
-    width: 100px;
-    padding: 0 35px;
-    content: "ХИТ";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #ffffff;
-    background-color: #d22856;
-    transform: rotate(-45deg);
-  }
+.tariff__tag {
+  position: absolute;
+  top: 17px;
+  left: -23px;
+  display: block;
+  width: 100px;
+  padding: 0 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #d22856;
+  transform: rotate(-45deg);
 }
 
 .tariff__name {
