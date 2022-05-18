@@ -8,28 +8,28 @@
     <base href="https://htmlacademy-adaptive.github.io/1945443-pink-25/4/">
 </head>
   <body>
-    <div class="wrapper">
+    <div class="container">
       <header class="header"> <!--  -active for menu-style-->
-        <div class="container header__inner">
+        <div class="container container--inside header__inner">
           <a class="header__logo header__logo--minimalistic" href="index.html">
             <img width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
           </a>
           <button class="header__burger">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <nav class="navigation"> <!-- -active for menu-->
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="index.html">Главная</a>
+          <nav class="header__navigation"> <!-- -active for menu-->
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="index.html">Главная</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="catalog.html">Фотографии</a>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="catalog.html">Фотографии</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="form.html">Конкурс</a>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="form.html">Конкурс</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </nav>
@@ -38,19 +38,19 @@
 
     <main class="main">
       <section class="sub-intro">
-        <div class="container">
+        <div class="container container--inside">
           <h1 class="visually-hidden">Конкурc от Pink</h1>
           <span class="sub-intro__slogan">Конкурс на самое безбашенное путешествие с Пинк</span>
         </div>
       </section>
 
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="container">
+        <div class="container container--inside">
           <h2 class="visually-hidden">Форма для конкурса от Pink</h2>
           <p class="intro-text intro-text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         </div>
         <div class="form__name">
-          <div class="container form__inner">
+          <div class="container container--inside form__inner">
             <div class="form-input">
               <label class="label" for="last-name">Фамилия:</label>
               <input class="form-input__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
@@ -66,7 +66,7 @@
           </div>
         </div>
         <div class="form__achievments">
-          <div class="container form__inner">
+          <div class="container container--inside form__inner">
             <p class="label label--choice">Ваши безбашенные достижения в путешествии</p>
             <ul class="achievments">
               <li class="achievments__item">
@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="form__contacts">
-          <div class="container form__inner">
+          <div class="container container--inside form__inner">
             <div class="form-input">
               <label class="label" for="phone">Номер телефона</label>
               <input class="form-input__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
@@ -109,7 +109,7 @@
           </div>
         </div>
         <div class="form__app">
-          <div class="container form__inner">
+          <div class="container container--inside form__inner">
             <p class="label label--choice">С каким приложением путешествовали?</p>
             <ul class="app">
               <li class="app__item">
@@ -122,13 +122,13 @@
               </li>
               <li class="app__item">
                 <input class="app__input visually-hidden" type="radio" name="app" id="app-windows" value="Windows">
-                <label class="app__label" for="app-ios">Windows Phone</label>
+                <label class="app__label" for="app-windows">Windows Phone</label>
               </li>
             </ul>
           </div>
         </div>
         <div class="form__comment">
-          <div class="container form__inner">
+          <div class="container container--inside form__inner">
             <div class="form-input">
               <p class="label label--choice">Опишите свои эмоции</p>
               <textarea class="form-input__field form-input__field--textarea" name="comment" id="comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
@@ -136,7 +136,7 @@
           </div>
         </div>
         <button class="final-button" type="submit">Отправить форму</button>
-        <p class="form__outro-text"><span class="lightened">*</span> — обязательные поля</p>
+        <p class="form__outro-text"><span class="form__outro-lightened">*</span> — обязательные поля</p>
       </form>
 
       <div class="modal-failure"> <!-- -active to open -->
@@ -156,7 +156,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer__inner">
+      <div class="container container--inside footer__inner">
         <a class="footer__logo footer__logo--medium" href="index.html">
           <img width="74" height="23" src="img/logo/footer-logo-minimal.svg" alt="Приложение Pink">
         </a>

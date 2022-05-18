@@ -8,28 +8,28 @@
     <base href="https://htmlacademy-adaptive.github.io/1945443-pink-25/4/">
 </head>
   <body>
-    <div class="wrapper">
+    <div class="container">
       <header class="header"> <!--  -active for menu-style-->
-        <div class="container header__inner">
+        <div class="container container--inside header__inner">
           <a class="header__logo header__logo--minimalistic" href="index.html">
             <img width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
           </a>
           <button class="header__burger">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <nav class="navigation"> <!-- -active for menu-->
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="index.html">Главная</a>
+          <nav class="header__navigation"> <!-- -active for menu-->
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="index.html">Главная</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="catalog.html">Фотографии</a>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="catalog.html">Фотографии</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="form.html">Конкурс</a>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="form.html">Конкурс</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </nav>
@@ -38,19 +38,20 @@
 
     <main class="main">
       <section class="sub-intro">
-        <div class="container">
+        <div class="container container--inside">
           <h1 class="visually-hidden">Каталог фотографий</h1>
           <span class="sub-intro__slogan">Фотографии пользователей</span>
         </div>
       </section>
       <section class="gallery-intro">
-        <div class="container">
+        <div class="container container--inside">
           <h2 class="visually-hidden">Панорама дня</h2>
           <p class="intro-text intro-text--catalog">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
         <div class="card card--panoramic">
-          <a class="card__link" href="img/gallery/panoramic/skypark.jpg">
-            <img class="card__image" width="320" height="137" src="img/gallery/panoramic/skypark.jpg" alt="Скайпарк">
+          <a class="card__link card__link--panoramic" href="img/gallery/panoramic/skypark.jpg">
+            <img class="card__image card__image--panoramic" width="320" height="137" src="img/gallery/panoramic/skypark.jpg" alt="Скайпарк">
+            <span class="card__tag">Панорама дня</span>
           </a>
           <div class="card__info card__info--panoramic">
             <span class="card__author">Анна</span>
@@ -62,7 +63,7 @@
       </section>
       <section class="gallery">
         <h2 class="visually-hidden">Галерея</h2>
-        <ul class="container gallery__inner">
+        <ul class="container container--inside gallery__inner">
           <li class="card">
             <a class="card__link" href="img/gallery/car.jpg">
               <img class="card__image" width="280" height="180" src="img/gallery/car.jpg" alt="Машина">
@@ -133,16 +134,16 @@
       </section>
 
       <section class="editor-intro">
-        <div class="container">
+        <div class="container container--inside">
           <h2 class="visually-hidden">Выложите свои фото здесь</h2>
           <p class="intro-text intro-text--editor">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
 
-      <section class="add-photo">
+      <section class="editor">
         <h2 class="visually-hidden">Редактор фото</h2>
-        <div class="container">
-          <form class="editor" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="container container--inside">
+          <form class="editor__form" action="https://echo.htmlacademy.ru/" method="post">
             <img class="editor__image" width="280" height="374" src="img/editor/winter.jpg" alt="Фотография для редактирования">
             <label class="visually-hidden" for="url">Путь к изображению</label>
             <input class="visually-hidden" type="text" name="url" id="url" value="img/editor/winter.jpg">
@@ -184,7 +185,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer__inner">
+      <div class="container container--inside footer__inner">
         <a class="footer__logo footer__logo--medium" href="index.html">
           <img width="74" height="23" src="img/logo/footer-logo-minimal.svg" alt="Приложение Pink">
         </a>
