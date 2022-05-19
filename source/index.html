@@ -10,7 +10,9 @@
     <div class="container">
       <header class="header"> <!--  -active for menu-style-->
         <div class="container container--inside header__inner">
-          <img class="header__logo header__logo--minimalistic" width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
+          <div class="header__logo-box">
+            <img class="header__logo" width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
+          </div>
           <button class="header__burger">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -35,36 +37,34 @@
 
       <main class="main">
         <section class="index-intro">
-          <div class="container container--inside">
+          <div class="index-intro__presentation">
             <h1 class="section-title visually-hidden">Приложение Pink</h1>
             <span class="index-intro__slogan">Взгляните на жизнь иначе!</span>
           </div>
-        </section>
-
-        <section class="download">
-          <div class="container container--inside download__inner">
-            <h2 class="section-title visually-hidden">Ссылки на скачивание</h2>
-            <a class="download__main-link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-            <div class="download__icons">
-              <a class="download__link" href="https://www.apple.com/ru/app-store/">
-                <img class="download__icon download__icon--apple" width="47" height="56" src="img/downloads/apple-logo.png" alt="Подходит для apple">
-              </a>
-              <a class="download__link" href="https://play.google.com/store?hl=ru&gl=US">
-                <img class="download__icon download__icon--android" width="43" height="47" src="img/downloads/android-logo.png" alt="Подходит для android">
-              </a>
-              <a class="download__link" href="https://www.microsoft.com/ru-tm/store/b/home">
-                <img class="download__icon download__icon--windows" width="44" height="41" src="img/downloads/microsoft-logo.png" alt="Подходит для windows">
-              </a>
+          <div class="index-intro__download">
+            <div class="index-intro__download-inner">
+              <a class="index-intro__download-main-link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+              <div class="index-intro__download-icons">
+                <a class="index-intro__download-link" href="https://www.apple.com/ru/app-store/">
+                  <img class="index-intro__download-icon index-intro__download-icon--apple" width="47" height="56" src="img/downloads/apple-logo.png" alt="Подходит для apple">
+                </a>
+                <a class="index-intro__download-link" href="https://play.google.com/store?hl=ru&gl=US">
+                  <img class="index-intro__download-icon index-intro__download-icon--android" width="43" height="47" src="img/downloads/android-logo.png" alt="Подходит для android">
+                </a>
+                <a class="index-intro__download-link" href="https://www.microsoft.com/ru-tm/store/b/home">
+                  <img class="index-intro__download-icon index-intro__download-icon--windows" width="44" height="41" src="img/downloads/microsoft-logo.png" alt="Подходит для windows">
+                </a>
+              </div>
+              <p class="index-intro__download-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
             </div>
-            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </section>
 
         <section class="ad">
           <div class="container container--inside ad__inner">
             <h2 class="section-title visually-hidden">О нас</h2>
-            <p class="section-title section-title--ad">Устали от серости мегаполиса?</p>
-            <p class="section-title section-title--ad">Нам есть, что вам предложить!</p>
+            <p class="section-title section-title--ad-headline">Устали от серости мегаполиса?</p>
+            <p class="section-title section-title--ad-subline">Нам есть, что вам предложить!</p>
           </div>
         </section>
 
@@ -88,22 +88,42 @@
           </div>
         </section>
 
+        <section class="effect">
+          <div class="container container--inside effect__inner">
+            <h2 class="section-title visually-hidden">Интересный факт о приложении</h2>
+            <div class="effect__info">
+              <span class="effect__title">Эффект <span class="effect__subtitle">на 24 часа!</span></span>
+              <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="effect__link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
+        </section>
+
         <section class="reviews">
           <div class="container container--inside">
             <h2 class="section-title visually-hidden">Отзывы</h2>
             <div class="reviews__slider">
               <div class="reviews__item reviews__item--active">
                 <span class="reviews__author">Николай Петров</span>
+                <span class="reviews__author-about">25 лет, водитель трамвая</span>
                 <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
               </div>
               <div class="reviews__item">
-                <span class="reviews__author">Николай Петров</span>
-                <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                <span class="reviews__author">Джейсон Стетхем</span>
+                <span class="reviews__author-about">22 года, водитель такси</span>
+                <blockquote class="reviews__text">«А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
               </div>
               <div class="reviews__item">
-                <span class="reviews__author">Николай Петров</span>
-                <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                <span class="reviews__author">Джо Байден</span>
+                <span class="reviews__author-about">23 года, водитель поезда</span>
+                <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»</blockquote>
               </div>
+              <button class="reviews__button reviews__button--prev">
+                <span class="visually-hidden">Назад</span>
+              </button>
+              <button class="reviews__button reviews__button--next">
+                <span class="visually-hidden">Вперед</span>
+              </button>
             </div>
             <div class="slider-dots slider-dots--reviews">
               <div class="slider-dots__dot slider-dots__dot--active">
@@ -194,7 +214,7 @@
         <section class="contacts">
           <div class="contacts__data">
             <div class="container container--inside">
-              <h2 class="section-title">Остались вопросы? <br> Свяжитесь с нами!</h2>
+              <h2 class="section-title section-title--contacts">Остались вопросы? <br> Свяжитесь с нами!</h2>
               <ul class="contacts__list">
                 <li class="contacts__item">
                   <span class="contacts__text">Звоните:</span>
@@ -220,7 +240,7 @@
           <a class="footer__logo footer__logo--medium" href="index.html">
             <img width="74" height="23" src="img/logo/footer-logo-minimal.svg" alt="Приложение Pink">
           </a>
-          <div class="socials">
+          <div class="socials socials--footer">
             <a class="socials__item socials__item--vk" href="#">
               <span class="visually-hidden">Наш Вконтакте</span>
             </a>
@@ -231,9 +251,9 @@
               <span class="visually-hidden">Наш Ютьюб</span>
             </a>
           </div>
-          <div class="developer">
-            <span class="developer__text">Разработано</span>
-            <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <div class="footer__developer">
+            <span class="footer__developer-text">Разработано</span>
+            <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <img width="27" height="34" src="img/logo/developer.svg" alt="Сайт разработчика">
             </a>
           </div>

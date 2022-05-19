@@ -1,12 +1,153 @@
 .index-intro {
+  position: relative;
+
+  @media (min-width: 660px) {
+    background: url("../img/intro/phone.png") 50% 100% no-repeat, url("../img/intro/screen.png") right 50% bottom 56px no-repeat, #1d384b url("../img/intro/intro-background.png") center / cover no-repeat;
+    padding-bottom: 82px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    padding-bottom: 94px;
+  }
+}
+
+.index-intro__presentation {
   color: #ffffff;
-  padding: 95px 0 320px;
+  padding: 90px 0 315px;
   background: url("../img/intro/phone.png") 50% 100% no-repeat, url("../img/intro/screen.png") right 50% bottom 56px no-repeat, #1d384b url("../img/intro/intro-background.png") center / cover no-repeat;
   text-align: center;
+
+  @media (min-width: 660px) {
+    background: transparent;
+    padding-bottom: 0;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    background: transparent;
+    padding-bottom: 0;
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .index-intro__slogan {
+  display: block;
   font-weight: 300;
   font-size: 24px;
-  line-height: 20px;
+  line-height: 28px;
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 0;
+    max-width: 300px;
+    padding: 115px 40px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 50px;
+    line-height: 68px;
+    margin-left: 0;
+    padding-top: 120px;
+  }
+}
+
+.index-intro__download {
+  @media (min-width: 660px) {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+  }
+}
+
+.index-intro__download-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 29px 0 31px;
+  color: #ffffff;
+  background: #1d2631;
+  height: 272px;
+
+  @media (min-width: 660px) {
+    width: 300px;
+    background: transparent;
+    height: 298px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 300px;
+    background: transparent;
+    height: 345px;
+    padding-top: 36px;
+  }
+}
+
+.index-intro__download-main-link {
+  display: block;
+  height: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  padding: 15px 35px;
+  width: 100%;
+  max-width: 280px;
+
+  @media (min-width: 660px) {
+    max-width: 360px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 21px;
+    padding: 15px 20px;
+  }
+}
+
+.index-intro__download-icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 65px;
+  margin-top: 9px;
+}
+
+.index-intro__download-link {
+  &:not(:first-child) {
+    margin-left: 35px;
+    padding-bottom: 2px;
+  }
+}
+
+.index-intro__download-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 280px;
+  margin: 0;
+}
+
+@media (min-width: 660px) {
+  .index-intro__download-text {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 300px;
+  }
 }
