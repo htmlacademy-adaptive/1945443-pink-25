@@ -1,0 +1,31 @@
+.modal-failure {
+  display: none;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  padding: 38px 0 49px;
+
+  &--active {
+    display: block;
+  }
+}
+
+.modal-failure__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.modal-failure__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  margin: 26px 0 0 0;
+}
+
+.modal-failure__confirmation {
+  margin-top: 40px;
+}

@@ -1,0 +1,21 @@
+.intro-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  padding: 45px 0 33px;
+  margin: 0 auto;
+
+  &--form {
+    max-width: 280px;
+  }
+
+  &--catalog {
+    max-width: 245px;
+  }
+
+  &--editor {
+    padding: 40px 0 41px;
+    max-width: 220px;
+  }
+}

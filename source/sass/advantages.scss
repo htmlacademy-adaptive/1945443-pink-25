@@ -1,0 +1,58 @@
+.advantages {
+  position: relative;
+  z-index: 1;
+  padding: 78px 0 318px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    bottom: 99%;
+    left: -40px;
+    z-index: -1;
+    transform: rotate(175deg);
+    display: block;
+    height: 225px;
+    width: 200%;
+    content: "";
+    background-color: #ffffff;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: url("../img/advantages/screen.png") right 50% bottom -6px no-repeat, url("../img/advantages/phone.png") right 50% bottom -42px no-repeat;
+    background-color: #f2f2f2;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages__item {
+  text-align: center;
+
+  &:not(:first-child) {
+    margin-top: 31px;
+  }
+}
+
+.advantages__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.advantages__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 12px 0 0 0;
+}

@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="container">
       <header class="header"> <!--  -active for menu-style-->
-        <div class="container header__inner">
+        <div class="container container--inside header__inner">
           <img class="header__logo header__logo--minimalistic" width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
           <button class="header__burger">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <nav class="navigation"> <!-- -active for menu-->
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="index.html">Главная</a>
+          <nav class="header__navigation"> <!-- -active for menu-->
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="index.html">Главная</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="catalog.html">Фотографии</a>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="catalog.html">Фотографии</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="form.html">Конкурс</a>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="form.html">Конкурс</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </nav>
@@ -35,14 +35,14 @@
 
       <main class="main">
         <section class="index-intro">
-          <div class="container index-intro__inner">
+          <div class="container container--inside">
             <h1 class="section-title visually-hidden">Приложение Pink</h1>
             <span class="index-intro__slogan">Взгляните на жизнь иначе!</span>
           </div>
         </section>
 
         <section class="download">
-          <div class="container download__inner">
+          <div class="container container--inside download__inner">
             <h2 class="section-title visually-hidden">Ссылки на скачивание</h2>
             <a class="download__main-link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <div class="download__icons">
@@ -61,15 +61,15 @@
         </section>
 
         <section class="ad">
-          <div class="container ad__inner">
+          <div class="container container--inside ad__inner">
             <h2 class="section-title visually-hidden">О нас</h2>
-            <p class="section-title">Устали от серости мегаполиса?</p>
-            <p class="section-title">Нам есть, что вам предложить!</p>
+            <p class="section-title section-title--ad">Устали от серости мегаполиса?</p>
+            <p class="section-title section-title--ad">Нам есть, что вам предложить!</p>
           </div>
         </section>
 
         <section class="advantages">
-          <div class="container">
+          <div class="container container--inside">
             <h2 class="section-title visually-hidden">Наши приемущества</h2>
             <ul class="advantages__list">
               <li class="advantages__item">
@@ -89,7 +89,7 @@
         </section>
 
         <section class="reviews">
-          <div class="container">
+          <div class="container container--inside">
             <h2 class="section-title visually-hidden">Отзывы</h2>
             <div class="reviews__slider">
               <div class="reviews__item reviews__item--active">
@@ -106,13 +106,13 @@
               </div>
             </div>
             <div class="slider-dots slider-dots--reviews">
-              <div class="slider-dot slider-dot--active">
+              <div class="slider-dots__dot slider-dots__dot--active">
                 <span class="visually-hidden">Переключить слайд</span>
               </div>
-              <div class="slider-dot">
+              <div class="slider-dots__dot">
                 <span class="visually-hidden">Переключить слайд</span>
               </div>
-              <div class="slider-dot">
+              <div class="slider-dots__dot">
                 <span class="visually-hidden">Переключить слайд</span>
               </div>
             </div>
@@ -120,7 +120,7 @@
         </section>
 
         <section class="tariffs">
-          <div class="container">
+          <div class="container container--inside">
             <div class="tariffs__grid">
               <h2 class="section-title visually-hidden">Наши тарифы</h2>
               <ul class="tariffs__options">
@@ -129,61 +129,62 @@
                 <li class="tariffs__option tariffs__option--comments">Комментарии</li>
               </ul>
               <ul class="tariffs__advantages">
-                <li class="tariffs__item tariffs__item--base">
-                  <div class="tariff-heading">
-                    <span class="tariffs__name">База</span>
-                    <span class="tariffs__price">1,99 USD</span>
+                <li class="tariff tariff--base">
+                  <div class="tariff__heading">
+                    <span class="tariff__name">База</span>
+                    <span class="tariff__price">1,99 USD</span>
                   </div>
-                  <div class="tariff-advantage tariff-advantage--filter tariff-advantage--positive">
-                    <span class="tariff-advantage__text">Розовый фильтр</span>
+                  <div class="tariff__advantage tariff__advantage--filter tariff__advantage--positive">
+                    <span class="tariff__text">Розовый фильтр</span>
                   </div>
-                  <div class="tariff-advantage tariff-advantage--emoji tariff-advantage--negative">
-                    <span class="tariff-advantage__text">Смайлики</span>
+                  <div class="tariff__advantage tariff__advantage--emoji tariff__advantage--negative">
+                    <span class="tariff__text">Смайлики</span>
                   </div>
-                  <div class="tariff-advantage tariff-advantage--comments tariff-advantage--negative">
-                    <span class="tariff-advantage__text">Комментарии</span>
-                  </div>
-                </li>
-                <li class="tariffs__item tariffs__item--standart">
-                  <div class="tariff-heading tariff-heading--special">
-                    <span class="tariffs__name">Стандарт</span>
-                    <span class="tariffs__price">3,99 USD</span>
-                  </div>
-                  <div class="tariff-advantage tariff-advantage--filter tariff-advantage--positive">
-                    <span class="tariff-advantage__text">Розовый фильтр</span>
-                  </div>
-                  <div class="tariff-advantage tariff-advantage--emoji tariff-advantage--positive">
-                    <span class="tariff-advantage__text">Смайлики</span>
-                  </div>
-                  <div class="tariff-advantage tariff-advantage--comments tariff-advantage--negative">
-                    <span class="tariff-advantage__text">Комментарии</span>
+                  <div class="tariff__advantage tariff__advantage--comments tariff__advantage--negative">
+                    <span class="tariff__text">Комментарии</span>
                   </div>
                 </li>
-                <li class="tariffs__item tariffs__item--unlimited">
-                  <div class="tariff-heading">
-                    <span class="tariffs__name">Анлим</span>
-                    <span class="tariffs__price">9,99 USD</span>
+                <li class="tariff tariff--standart">
+                  <div class="tariff__heading">
+                    <span class="tariff__name">Стандарт</span>
+                    <span class="tariff__price">3,99 USD</span>
                   </div>
-                  <div class="tariff-advantage tariff-advantage--filter tariff-advantage--positive">
-                    <span class="tariff-advantage__text">Розовый фильтр</span>
+                  <span class="tariff__tag">Хит</span>
+                  <div class="tariff__advantage tariff__advantage--filter tariff__advantage--positive">
+                    <span class="tariff__text">Розовый фильтр</span>
                   </div>
-                  <div class="tariff-advantage tariff-advantage--emoji tariff-advantage--positive">
-                    <span class="tariff-advantage__text">Смайлики</span>
+                  <div class="tariff__advantage tariff__advantage--emoji tariff__advantage--positive">
+                    <span class="tariff__text">Смайлики</span>
                   </div>
-                  <div class="tariff-advantage tariff-advantage--comments tariff-advantage--positive">
-                    <span class="tariff-advantage__text">Комментарии</span>
+                  <div class="tariff__advantage tariff__advantage--comments tariff__advantage--negative">
+                    <span class="tariff__text">Комментарии</span>
+                  </div>
+                </li>
+                <li class="tariff tariff--unlimited">
+                  <div class="tariff__heading">
+                    <span class="tariff__name">Анлим</span>
+                    <span class="tariff__price">9,99 USD</span>
+                  </div>
+                  <div class="tariff__advantage tariff__advantage--filter tariff__advantage--positive">
+                    <span class="tariff__text">Розовый фильтр</span>
+                  </div>
+                  <div class="tariff__advantage tariff__advantage--emoji tariff__advantage--positive">
+                    <span class="tariff__text">Смайлики</span>
+                  </div>
+                  <div class="tariff__advantage tariff__advantage--comments tariff__advantage--positive">
+                    <span class="tariff__text">Комментарии</span>
                   </div>
                 </li>
               </ul>
             </div>
             <div class="slider-dots slider-dots--tariffs">
-              <div class="slider-dot">
+              <div class="slider-dots__dot">
                 <span class="visually-hidden">Переключить слайд</span>
               </div>
-              <div class="slider-dot slider-dot--active">
+              <div class="slider-dots__dot slider-dots__dot--active">
                 <span class="visually-hidden">Переключить слайд</span>
               </div>
-              <div class="slider-dot">
+              <div class="slider-dots__dot">
                 <span class="visually-hidden">Переключить слайд</span>
               </div>
             </div>
@@ -192,7 +193,7 @@
 
         <section class="contacts">
           <div class="contacts__data">
-            <div class="container">
+            <div class="container container--inside">
               <h2 class="section-title">Остались вопросы? <br> Свяжитесь с нами!</h2>
               <ul class="contacts__list">
                 <li class="contacts__item">
@@ -215,7 +216,7 @@
       </main>
 
       <footer class="footer">
-        <div class="container footer__inner">
+        <div class="container container--inside footer__inner">
           <a class="footer__logo footer__logo--medium" href="index.html">
             <img width="74" height="23" src="img/logo/footer-logo-minimal.svg" alt="Приложение Pink">
           </a>
