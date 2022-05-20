@@ -3,6 +3,14 @@
   display: grid;
   grid-template-rows: 99px repeat(3, 60px);
   overflow: hidden;
+
+  @media (min-width: 660px) {
+    grid-template-rows: 82px repeat(3, 46px);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-rows: 100px repeat(3, 61px);
+  }
 }
 
 .tariff__heading {
@@ -15,6 +23,10 @@
   border: 1px solid #e5e5e5;
   padding-top: 12px;
   overflow: hidden;
+
+  @media (min-width: 660px) {
+    padding-top: 14px;
+  }
 }
 
 .tariff__tag {
@@ -31,6 +43,21 @@
   color: #ffffff;
   background-color: #d22856;
   transform: rotate(-45deg);
+
+  @media (min-width: 660px) {
+    top: 9px;
+    left: -22px;
+    padding: 0 28px;
+    line-height: 19px;
+  }
+
+  @media (min-width: 1200px) {
+    top: 14px;
+    left: -22px;
+    width: 110px;
+    padding: 0 35px;
+    line-height: 24px;
+  }
 }
 
 .tariff__name {
@@ -38,6 +65,11 @@
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    padding-top: 3px;
+  }
 }
 
 .tariff__price {
@@ -45,6 +77,11 @@
   font-size: 18px;
   line-height: 30px;
   margin-top: -4px;
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    padding-top: 4px;
+  }
 }
 
 .tariff__advantage {
@@ -66,6 +103,10 @@
     background-position: right 15px center;
     background-image: url("data:image/svg+xml,%0A%3Csvg width='31' height='21' viewBox='0 0 31 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z' fill='%233DC644'/%3E%3C/svg%3E%0A");
   }
+
+  @media (min-width: 660px) {
+    background-position: center;
+  }
 }
 
 .tariff__text {
@@ -74,4 +115,8 @@
   line-height: 30px;
   color: #283645;
   text-transform: uppercase;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
 }

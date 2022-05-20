@@ -2,6 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &--footer {
+    @media (min-width: 660px) {
+      margin-top: 2px;
+    }
+  }
 }
 
 .socials__item {
