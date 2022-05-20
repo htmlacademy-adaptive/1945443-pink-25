@@ -5,10 +5,18 @@
 
   &--reviews {
     margin-top: 31px;
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
   }
 
   &--tariffs {
     margin-top: 42px;
+
+    @media (min-width: 660px) {
+      display: none;
+    }
   }
 }
 

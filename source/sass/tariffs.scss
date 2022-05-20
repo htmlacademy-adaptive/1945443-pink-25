@@ -2,17 +2,37 @@
   position: relative;
   padding: 96px 0 45px;
 
+  @media (min-width: 660px) {
+    padding-top: 92px;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 168px;
+    padding-bottom: 97px;
+  }
+
   &::before {
     position: absolute;
     bottom: 99%;
     left: -40px;
     z-index: -1;
-    transform: rotate(177deg);
+    transform: rotate(175deg);
     display: block;
-    height: 225px;
+    height: 425px;
     width: 200%;
     content: "";
     background-color: #ffffff;
+
+    @media (min-width: 660px) {
+      bottom: 100%;
+      transform: rotate(176deg);
+    }
+
+    @media (min-width: 1200px) {
+      bottom: 95%;
+      transform: rotate(176deg);
+    }
   }
 
   &::after {
@@ -32,6 +52,10 @@
   left: -277px;
   display: flex;
   align-items: flex-end;
+
+  @media (min-width: 660px) {
+    left: 0;
+  }
 }
 
 .tariffs__advantages {
@@ -42,6 +66,14 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: 660px) {
+    grid-template-columns: repeat(3, 155px);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 237px);
+  }
 }
 
 .tariffs__options {
@@ -53,10 +85,29 @@
   font-size: 14px;
   line-height: 30px;
   background-color: #ffffff;
+
+  @media (min-width: 660px) {
+    display: grid;
+    grid-template-columns: 153px;
+    grid-template-rows: repeat(3, 46px);
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 232px;
+    grid-template-rows: repeat(3, 61px);
+    font-size: 18px;
+  }
 }
 
 .tariffs__option {
   display: flex;
   align-items: center;
-  margin-left: 15px;
+  border: 1px solid #e5e5e5;
+  padding-left: 15px;
+
+  @media (min-width: 1200px) {
+    padding-left: 20px;
+    padding-bottom: 4px;
+  }
 }
