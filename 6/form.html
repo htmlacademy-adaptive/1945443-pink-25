@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/1945443-pink-25/6/">
+</head>
+  <body>
+    <div class="container">
+      <header class="header"> <!--  -active for menu-style-->
+        <div class="container container--inside header__inner">
+          <a class="header__logo-box" href="index.html">
+            <img class="header__logo" width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
+          </a>
+          <button class="header__burger">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <nav class="header__navigation"> <!-- -active for menu-->
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="index.html">Главная</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="header__navigation-item header__navigation-item--active">
+                <a class="header__navigation-link" href="form.html">Конкурс</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main class="main">
+      <section class="sub-intro">
+        <div class="container container--inside">
+          <h1 class="visually-hidden">Конкурc от Pink</h1>
+          <span class="sub-intro__slogan">Конкурс на самое безбашенное путешествие с Пинк</span>
+        </div>
+      </section>
+
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form__intro">
+          <h2 class="visually-hidden">Форма для конкурса от Pink</h2>
+          <p class="intro-text intro-text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="intro-text intro-text--form-heading">Пожалуйста, заполните форму ниже:</span></p>
+        </div>
+        <div class="form__name">
+          <div class="container container--inside form__inner">
+            <div class="form-input form-input--name">
+              <label class="label" for="last-name">Фамилия:</label>
+              <input class="form-input__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
+            </div>
+            <div class="form-input form-input--name">
+              <label class="label" for="first-name">Имя:</label>
+              <input class="form-input__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+            </div>
+            <div class="form-input form-input--name">
+              <label class="label" for="middle-name">Отчество:</label>
+              <input class="form-input__field" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+            </div>
+          </div>
+        </div>
+        <div class="form__achievments">
+          <div class="container container--inside form__inner">
+            <p class="label label--choice label--achievments">Ваши безбашенные достижения в путешествии</p>
+            <ul class="achievments">
+              <li class="achievments__item">
+                <input class="achievments__input visually-hidden" type="checkbox" name="achievments" id="achievments-1" value="Сделал селфи с акулой" checked>
+                <label class="achievments__label" for="achievments-1">Сделал селфи с акулой</label>
+              </li>
+              <li class="achievments__item">
+                <input class="achievments__input visually-hidden" type="checkbox" name="achievments" id="achievments-2" value="Обгорел на пляже" checked>
+                <label class="achievments__label" for="achievments-2">Обгорел на пляже</label>
+              </li>
+              <li class="achievments__item">
+                <input class="achievments__input visually-hidden" type="checkbox" name="achievments" id="achievments-3" value="Видел Чака Норриса">
+                <label class="achievments__label" for="achievments-3">Видел Чака Норриса</label>
+              </li>
+              <li class="achievments__item">
+                <input class="achievments__input visually-hidden" type="checkbox" name="achievments" id="achievments-4" value="Накупил сувениров">
+                <label class="achievments__label" for="achievments-4">Накупил сувениров</label>
+              </li>
+              <li class="achievments__item">
+                <input class="achievments__input visually-hidden" type="checkbox" name="achievments" id="achievments-5" value="Удержал башню" checked>
+                <label class="achievments__label" for="achievments-5">Удержал башню</label>
+              </li>
+              <li class="achievments__item">
+                <input class="achievments__input visually-hidden" type="checkbox" name="achievments" id="achievments-6" value="Разгромил отель">
+                <label class="achievments__label" for="achievments-6">Разгромил отель</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__contacts">
+          <div class="container container--inside form__inner form__inner--contacts">
+            <p class="label label--choice label--contacts">Контактная информация</p>
+            <div class="form-input form-input--phone">
+              <label class="label label--phone" for="phone">Номер телефона</label>
+              <input class="form-input__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
+            </div>
+            <div class="form-input form-input--email">
+              <label class="label label--email" for="email">Адрес почты</label>
+              <input class="form-input__field" type="email" name="email" id="email" placeholder="Введите почту *" required>
+            </div>
+          </div>
+        </div>
+        <div class="form__app">
+          <div class="container container--inside form__inner">
+            <p class="label label--choice label--app">С каким приложением путешествовали?</p>
+            <ul class="app">
+              <li class="app__item">
+                <input class="app__input visually-hidden" type="radio" name="app" id="app-ios" value="iOS" checked>
+                <label class="app__label" for="app-ios">Pink для iOS</label>
+              </li>
+              <li class="app__item">
+                <input class="app__input visually-hidden" type="radio" name="app" id="app-adnroid" value="Android">
+                <label class="app__label" for="app-adnroid">Pink на Android</label>
+              </li>
+              <li class="app__item">
+                <input class="app__input visually-hidden" type="radio" name="app" id="app-windows" value="Windows">
+                <label class="app__label" for="app-windows">Windows Phone</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__comment">
+          <div class="container container--inside form__inner">
+            <div class="form-input">
+              <p class="label label--choice label--comment">Опишите свои эмоции</p>
+              <textarea class="form-input__field form-input__field--textarea" name="comment" id="comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form__submit">
+          <button class="final-button" type="submit">Отправить форму</button>
+          <p class="form__outro-text"><span class="form__outro-lightened">*</span> — обязательные <span class="form__outro-full">для заполнения</span> поля</p>
+        </div>
+      </form>
+
+      <div class="modal-failure"> <!-- -active to open -->
+        <span class="modal-failure__heading">Что-то пошло не так!</span>
+        <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="modal-failure__confirmation">
+          <button class="final-button">ОК</button>
+        </div>
+      </div>
+      <div class="modal-success"> <!-- -active to open -->
+        <span class="modal-success__heading">Ваша заявка отправлена</span>
+        <p class="modal-success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <div class="modal-success__confirmation">
+          <button class="final-button">Закрыть окно</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container container--inside footer__inner">
+        <a class="footer__logo footer__logo--medium" href="index.html">
+          <img width="74" height="23" src="img/logo/footer-logo-minimal.svg" alt="Приложение Pink">
+        </a>
+        <div class="socials">
+          <a class="socials__item socials__item--vk" href="#">
+            <span class="visually-hidden">Наш Вконтакте</span>
+          </a>
+          <a class="socials__item socials__item--telegram" href="#">
+            <span class="visually-hidden">Наш Телеграмм</span>
+          </a>
+          <a class="socials__item socials__item--youtube" href="#">
+            <span class="visually-hidden">Наш Ютьюб</span>
+          </a>
+        </div>
+        <div class="footer__developer">
+          <span class="footer__developer-text">Разработано</span>
+          <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <img width="27" height="34" src="img/logo/developer.svg" alt="Сайт разработчика">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  </body>
+</html>
