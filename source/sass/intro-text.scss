@@ -8,14 +8,83 @@
 
   &--form {
     max-width: 280px;
+
+    @media (min-width: 660px) {
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 500px;
+      padding: 91px 0 0;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 800px;
+    }
+  }
+
+  &--form-heading {
+    display: none;
+    padding-top: 0;
+
+    @media (min-width: 660px) {
+      display: block;
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 500px;
+    }
+
+    @media (min-width: 1200px) {
+      display: inline-block;
+    }
   }
 
   &--catalog {
     max-width: 245px;
+
+    @media (min-width: 660px) {
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 550px;
+      padding-top: 91px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 620px;
+    }
   }
 
-  &--editor {
-    padding: 40px 0 41px;
+  &--editor-slogan {
     max-width: 220px;
+    padding-bottom: 0;
+    padding-top: 39px;
+
+    @media (min-width: 660px) {
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 550px;
+      padding-top: 64px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-top: 58px;
+      max-width: 620px;
+    }
+  }
+
+  &--editor-intro {
+    max-width: 320px;
+    padding-top: 0;
+    padding-bottom: 43px;
+
+    @media (min-width: 660px) {
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 550px;
+      padding-bottom: 70px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 620px;
+      padding-bottom: 68px;
+    }
   }
 }

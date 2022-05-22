@@ -5,7 +5,7 @@
   overflow: hidden;
 
   @media (min-width: 660px) {
-    grid-template-rows: 79px repeat(3, 46px);
+    grid-template-rows: 82px repeat(3, 46px);
   }
 
   @media (min-width: 1200px) {
@@ -23,6 +23,10 @@
   border: 1px solid #e5e5e5;
   padding-top: 12px;
   overflow: hidden;
+
+  @media (min-width: 660px) {
+    padding-top: 14px;
+  }
 }
 
 .tariff__tag {
@@ -42,16 +46,17 @@
 
   @media (min-width: 660px) {
     top: 9px;
-    left: -23px;
-    line-height: 18px;
+    left: -22px;
     padding: 0 28px;
+    line-height: 19px;
   }
 
   @media (min-width: 1200px) {
-    top: 23px;
-    left: -23px;
-    line-height: 20px;
-    padding: 0 39px;
+    top: 14px;
+    left: -22px;
+    width: 110px;
+    padding: 0 35px;
+    line-height: 24px;
   }
 }
 
@@ -63,8 +68,7 @@
 
   @media (min-width: 1200px) {
     font-size: 18px;
-    line-height: 30px;
-    margin-top: 7px;
+    padding-top: 3px;
   }
 }
 
@@ -76,8 +80,7 @@
 
   @media (min-width: 1200px) {
     font-size: 24px;
-    line-height: 30px;
-    margin-top: 2px;
+    padding-top: 4px;
   }
 }
 

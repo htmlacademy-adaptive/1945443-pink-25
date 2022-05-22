@@ -1,46 +1,197 @@
 .form {
+  display: grid;
+  grid-template-areas: "intro" "name" "achievments" "contacts" "app" "comment" "submit";
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
   padding-bottom: 21px;
+
+  @media (min-width: 660px) {
+    grid-template-areas: "intro" "name" "app" "contacts" "achievments" "comment" "submit";
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-areas: "intro intro" "name app" "contacts contacts" "achievments achievments" "comment comment" "submit submit";
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
 }
 
 .form__inner {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
+
+  &--contacts {
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      align-items: center;
+      padding: 0 24px;
+    }
+  }
+}
+
+.form__intro {
+  grid-area: intro;
+
+  @media (min-width: 1200px) {
+    padding-bottom: 16px;
+  }
 }
 
 .form__name {
+  grid-area: name;
   padding: 0 0 42px 0;
+
+  @media (min-width: 660px) {
+    padding-top: 38px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 435px;
+  }
 }
 
 .form__achievments {
+  grid-area: achievments;
+  position: relative;
   padding: 38px 0 43px;
   background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    width: 618px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    padding-bottom: 48px;
+    margin-top: 67px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+    padding-bottom: 54px;
+  }
 }
 
 .form__contacts {
+  grid-area: contacts;
+  position: relative;
   padding: 32px 0 40px;
+
+  @media (min-width: 660px) {
+    width: 618px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    padding-bottom: 28px;
+    padding-top: 42px;
+    margin-top: 67px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+    padding-bottom: 14px;
+    padding-top: 40px;
+    margin-top: 22px;
+  }
 }
 
 .form__app {
+  grid-area: app;
+  position: relative;
   padding: 39px 0 42px;
   background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    width: 619px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    padding-bottom: 51px;
+    padding-top: 41px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 435px;
+    padding-bottom: 0;
+    margin-top: 31px;
+    margin-left: 69px;
+    height: 300px;
+  }
 }
 
 .form__comment {
+  grid-area: comment;
+  position: relative;
   padding: 37px 0 49px;
+
+  @media (min-width: 660px) {
+    width: 618px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    padding-top: 43px;
+    padding-bottom: 48px;
+    margin-top: 67px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+    padding-top: 40px;
+    padding-bottom: 44px;
+  }
+}
+
+.form__submit {
+  grid-area: submit;
+  padding: 0 20px;
+
+  @media (min-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 71px;
+    padding-bottom: 44px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin-top: 63px;
+  }
 }
 
 .form__outro-text {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   margin: 32px 0 0 0;
+
+  @media (min-width: 600px) {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.form__outro-full {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: inline;
+  }
 }
 
 .form__outro-lightened {

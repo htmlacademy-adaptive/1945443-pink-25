@@ -21,7 +21,7 @@
               <li class="header__navigation-item">
                 <a class="header__navigation-link" href="index.html">Главная</a>
               </li>
-              <li class="header__navigation-item">
+              <li class="header__navigation-item header__navigation-item--active">
                 <a class="header__navigation-link" href="catalog.html">Фотографии</a>
               </li>
               <li class="header__navigation-item">
@@ -39,7 +39,7 @@
       <section class="sub-intro">
         <div class="container container--inside">
           <h1 class="visually-hidden">Каталог фотографий</h1>
-          <span class="sub-intro__slogan">Фотографии пользователей</span>
+          <span class="sub-intro__slogan sub-intro__slogan--gallery">Фотографии пользователей</span>
         </div>
       </section>
       <section class="gallery-intro">
@@ -53,10 +53,9 @@
             <span class="card__tag">Панорама дня</span>
           </a>
           <div class="card__info card__info--panoramic">
-            <span class="card__author">Анна</span>
-            <span class="card__time">(5 минут назад)</span>
-            <p class="card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="card__likes">Нравится: 215</span>
+            <span class="card__author">Анна<span class="card__time card__time--panoramic">(5 минут назад)</span></span>
+            <p class="card__text card__text--panoramic">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="card__likes card__likes--panoramic">Нравится: 215</span>
           </div>
         </div>
       </section>
@@ -68,8 +67,7 @@
               <img class="card__image" width="280" height="180" src="img/gallery/car.jpg" alt="Машина">
             </a>
             <div class="card__info">
-              <span class="card__author">Левон</span>
-              <span class="card__time">(5 часов назад)</span>
+              <span class="card__author">Левон <span class="card__time">(5 часов назад)</span></span>
               <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <span class="card__likes">Нравится: 356</span>
             </div>
@@ -79,8 +77,7 @@
               <img class="card__image" width="280" height="180" src="img/gallery/drums.jpg" alt="Барабаны">
             </a>
             <div class="card__info">
-              <span class="card__author">Антон</span>
-              <span class="card__time">(12 часов назад)</span>
+              <span class="card__author">Антон <span class="card__time">(12 часов назад)</span></span>
               <p class="card__text">Соседи будут рады!</p>
               <span class="card__likes">Нравится: 666</span>
             </div>
@@ -90,8 +87,7 @@
               <img class="card__image" width="280" height="180" src="img/gallery/roof.jpg" alt="Галерея">
             </a>
             <div class="card__info">
-              <span class="card__author">Борис</span>
-              <span class="card__time">(20 часов назад)</span>
+              <span class="card__author">Борис <span class="card__time">(20 часов назад)</span></span>
               <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <span class="card__likes">Нравится: 215</span>
             </div>
@@ -101,8 +97,7 @@
               <img class="card__image" width="280" height="180" src="img/gallery/market.jpg" alt="Рынок">
             </a>
             <div class="card__info">
-              <span class="card__author">Сергей</span>
-              <span class="card__time">(25 часов назад)</span>
+              <span class="card__author">Сергей <span class="card__time">(25 часов назад)</span></span>
               <p class="card__text">Самая кубанская в мире!</p>
               <span class="card__likes">Нравится: 4</span>
             </div>
@@ -112,8 +107,7 @@
               <img class="card__image" width="280" height="180" src="img/gallery/mountains.jpg" alt="Горы">
             </a>
             <div class="card__info">
-              <span class="card__author">Максим</span>
-              <span class="card__time">(40 часов назад)</span>
+              <span class="card__author">Максим <span class="card__time">(40 часов назад)</span></span>
               <p class="card__text">Где снег-то?</p>
               <span class="card__likes">Нравится: 150</span>
             </div>
@@ -123,8 +117,7 @@
               <img class="card__image" width="280" height="180" src="img/gallery/plane.jpg" alt="Самолет">
             </a>
             <div class="card__info">
-              <span class="card__author">Надежда</span>
-              <span class="card__time">(45 часов назад)</span>
+              <span class="card__author">Надежда <span class="card__time">(45 часов назад)</span></span>
               <p class="card__text">Всем GM и взаимные лайки!</p>
               <span class="card__likes">Нравится: 2560</span>
             </div>
@@ -135,7 +128,8 @@
       <section class="editor-intro">
         <div class="container container--inside">
           <h2 class="visually-hidden">Выложите свои фото здесь</h2>
-          <p class="intro-text intro-text--editor">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="intro-text intro-text--editor-slogan">Затмите их всех!</p>
+          <p class="intro-text intro-text--editor-intro">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
 
@@ -199,9 +193,9 @@
             <span class="visually-hidden">Наш Ютьюб</span>
           </a>
         </div>
-        <div class="developer">
-          <span class="developer__text">Разработано</span>
-          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <div class="footer__developer">
+          <span class="footer__developer-text">Разработано</span>
+          <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <img width="27" height="34" src="img/logo/developer.svg" alt="Сайт разработчика">
           </a>
         </div>

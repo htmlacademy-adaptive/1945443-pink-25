@@ -1,30 +1,31 @@
 .contacts {
-  padding: 41px 0 0 0;
+  padding: 42px 0 0 0;
 
-  @media (min-width: 1200px) {
-    padding-top: 55px;
+  @media (min-width: 660px) {
+    padding-top: 46px;
   }
 }
 
 .contacts__list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 77px);
+  grid-template-rows: repeat(3, 78px);
+  text-align: center;
   margin: 34px 0 0 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: 660px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 103px);
+    grid-template-rows: 102px 102px;
     column-gap: 19px;
   }
 
   @media (min-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 16px;
-    margin-top: 38px;
+    grid-template-rows: 102px;
+    column-gap: 19px;
+    margin-top: 41px;
   }
 }
 
@@ -33,15 +34,13 @@
   flex-direction: column;
   text-align: center;
 
-  @media (min-width: 660px) {
-    &:last-child {
+  &:last-child {
+    @media (min-width: 660px) {
       grid-column: 1 / -1;
       grid-row: 2;
     }
-  }
 
-  @media (min-width: 1200px) {
-    &:last-child {
+    @media (min-width: 1200px) {
       grid-column: 2;
       grid-row: 1;
     }
@@ -61,12 +60,12 @@
   color: #d22856;
 
   @media (min-width: 660px) {
-    max-width: 290px;
-    margin: 3px auto 0;
+    max-width: 250px;
+    margin: 2px auto 0;
   }
 
   @media (min-width: 1200px) {
-    margin-top: 19px;
+    margin-top: 20px;
   }
 }
 
@@ -88,16 +87,16 @@
     border-color: #ffffff transparent transparent transparent;
 
     @media (min-width: 660px) {
-      border-width: 85px 400px 0 400px;
+      border-width: 65px 400px 0 400px;
     }
 
     @media (min-width: 1200px) {
-      border-width: 120px 750px 0 750px;
+      border-width: 115px 720px 0 720px;
     }
   }
 
   @media (min-width: 660px) {
-    padding-bottom: 0;
+    padding-bottom: 15px;
   }
 }
 
@@ -105,13 +104,13 @@
   position: relative;
   z-index: -3;
   width: 100%;
-  height: 200px;
+  height: 210px;
 
   @media (min-width: 660px) {
-    height: 400px;
+    height: 384px;
   }
 
   @media (min-width: 1200px) {
-    height: 520px;
+    height: 515px;
   }
 }

@@ -10,8 +10,8 @@
     <div class="container">
       <header class="header"> <!--  -active for menu-style-->
         <div class="container container--inside header__inner">
-          <a class="header__logo header__logo--minimalistic" href="index.html">
-            <img width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
+          <a class="header__logo-box" href="index.html">
+            <img class="header__logo" width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
           </a>
           <button class="header__burger">
             <span class="visually-hidden">Открыть меню</span>
@@ -24,7 +24,7 @@
               <li class="header__navigation-item">
                 <a class="header__navigation-link" href="catalog.html">Фотографии</a>
               </li>
-              <li class="header__navigation-item">
+              <li class="header__navigation-item header__navigation-item--active">
                 <a class="header__navigation-link" href="form.html">Конкурс</a>
               </li>
               <li class="header__navigation-item">
@@ -44,21 +44,21 @@
       </section>
 
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="container container--inside">
+        <div class="form__intro">
           <h2 class="visually-hidden">Форма для конкурса от Pink</h2>
-          <p class="intro-text intro-text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="intro-text intro-text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="intro-text intro-text--form-heading">Пожалуйста, заполните форму ниже:</span></p>
         </div>
         <div class="form__name">
           <div class="container container--inside form__inner">
-            <div class="form-input">
+            <div class="form-input form-input--name">
               <label class="label" for="last-name">Фамилия:</label>
               <input class="form-input__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
             </div>
-            <div class="form-input">
+            <div class="form-input form-input--name">
               <label class="label" for="first-name">Имя:</label>
               <input class="form-input__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
             </div>
-            <div class="form-input">
+            <div class="form-input form-input--name">
               <label class="label" for="middle-name">Отчество:</label>
               <input class="form-input__field" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
             </div>
@@ -66,7 +66,7 @@
         </div>
         <div class="form__achievments">
           <div class="container container--inside form__inner">
-            <p class="label label--choice">Ваши безбашенные достижения в путешествии</p>
+            <p class="label label--choice label--achievments">Ваши безбашенные достижения в путешествии</p>
             <ul class="achievments">
               <li class="achievments__item">
                 <input class="achievments__input visually-hidden" type="checkbox" name="achievments" id="achievments-1" value="Сделал селфи с акулой" checked>
@@ -96,23 +96,24 @@
           </div>
         </div>
         <div class="form__contacts">
-          <div class="container container--inside form__inner">
-            <div class="form-input">
-              <label class="label" for="phone">Номер телефона</label>
+          <div class="container container--inside form__inner form__inner--contacts">
+            <p class="label label--choice label--contacts">Контактная информация</p>
+            <div class="form-input form-input--phone">
+              <label class="label label--phone" for="phone">Номер телефона</label>
               <input class="form-input__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
             </div>
-            <div class="form-input">
-              <label class="label" for="email">Адрес почты</label>
+            <div class="form-input form-input--email">
+              <label class="label label--email" for="email">Адрес почты</label>
               <input class="form-input__field" type="email" name="email" id="email" placeholder="Введите почту *" required>
             </div>
           </div>
         </div>
         <div class="form__app">
           <div class="container container--inside form__inner">
-            <p class="label label--choice">С каким приложением путешествовали?</p>
+            <p class="label label--choice label--app">С каким приложением путешествовали?</p>
             <ul class="app">
               <li class="app__item">
-                <input class="app__input visually-hidden" type="radio" name="app" id="app-ios" value="iOS">
+                <input class="app__input visually-hidden" type="radio" name="app" id="app-ios" value="iOS" checked>
                 <label class="app__label" for="app-ios">Pink для iOS</label>
               </li>
               <li class="app__item">
@@ -129,13 +130,15 @@
         <div class="form__comment">
           <div class="container container--inside form__inner">
             <div class="form-input">
-              <p class="label label--choice">Опишите свои эмоции</p>
+              <p class="label label--choice label--comment">Опишите свои эмоции</p>
               <textarea class="form-input__field form-input__field--textarea" name="comment" id="comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
           </div>
         </div>
-        <button class="final-button" type="submit">Отправить форму</button>
-        <p class="form__outro-text"><span class="form__outro-lightened">*</span> — обязательные поля</p>
+        <div class="form__submit">
+          <button class="final-button" type="submit">Отправить форму</button>
+          <p class="form__outro-text"><span class="form__outro-lightened">*</span> — обязательные <span class="form__outro-full">для заполнения</span> поля</p>
+        </div>
       </form>
 
       <div class="modal-failure"> <!-- -active to open -->
@@ -170,9 +173,9 @@
             <span class="visually-hidden">Наш Ютьюб</span>
           </a>
         </div>
-        <div class="developer">
-          <span class="developer__text">Разработано</span>
-          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <div class="footer__developer">
+          <span class="footer__developer-text">Разработано</span>
+          <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <img width="27" height="34" src="img/logo/developer.svg" alt="Сайт разработчика">
           </a>
         </div>

@@ -4,12 +4,12 @@
 
   @media (min-width: 660px) {
     padding-top: 92px;
-    padding-bottom: 69px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: 1200px) {
-    padding-top: 168px;
-    padding-bottom: 97px;
+    padding-top: 165px;
+    padding-bottom: 67px;
   }
 
   &::before {
@@ -17,7 +17,7 @@
     bottom: 99%;
     left: -40px;
     z-index: -1;
-    transform: rotate(175deg);
+    transform: rotate(176deg);
     display: block;
     height: 425px;
     width: 200%;
@@ -26,12 +26,10 @@
 
     @media (min-width: 660px) {
       bottom: 100%;
-      transform: rotate(176deg);
     }
 
-    @media (min-width: 1200px) {
-      bottom: 95%;
-      transform: rotate(176deg);
+    @media (min-width: 660px) {
+      transform: rotate(174deg);
     }
   }
 
@@ -68,7 +66,7 @@
   list-style-type: none;
 
   @media (min-width: 660px) {
-    grid-template-columns: repeat(3, 155px);
+    grid-template-columns: repeat(3, 156px);
   }
 
   @media (min-width: 1200px) {
