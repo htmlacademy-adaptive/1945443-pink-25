@@ -14,4 +14,9 @@
   padding: 17px 0;
   margin: 0 auto;
   border: none;
+
+  @media (min-width: 660px) {
+    max-width: 299px;
+    margin: 0;
+  }
 }
