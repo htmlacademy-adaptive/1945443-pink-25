@@ -4,6 +4,16 @@
   padding: 95px 0 43px;
   min-height: 237px;
   text-align: center;
+
+  @media (min-width: 660px) {
+    padding: 177px 0 60px;
+    height: 440px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 169px 0 89px;
+    height: 395px;
+  }
 }
 
 .sub-intro__slogan {
@@ -11,4 +21,17 @@
   font-size: 24px;
   line-height: 33px;
   color: #ffffff;
+
+  @media (min-width: 660px) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  &--gallery {
+    @media (min-width: 660px) {
+      display: block;
+      max-width: 370px;
+      margin: 0 auto;
+    }
+  }
 }

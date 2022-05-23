@@ -2,6 +2,25 @@
   margin: 38px 0 0 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: 660px) {
+    margin-top: 12px;
+    padding-left: 37px;
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 313px 296px 253px;
+    grid-template-rows: repeat(2, 40px);
+    grid-auto-flow: column;
+    // grid-auto-rows: auto;
+    // grid-auto-columns: auto;
+    grid-row-gap: 42px;
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
 }
 
 .achievments__item {
@@ -9,6 +28,10 @@
 
   &:not(:first-child) {
     margin-top: 43px;
+
+    @media (min-width: 1200px) {
+      margin-top: 0;
+    }
   }
 }
 

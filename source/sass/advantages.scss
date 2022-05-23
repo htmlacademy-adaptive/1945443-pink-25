@@ -3,12 +3,13 @@
   z-index: 1;
   padding: 78px 0 318px;
   overflow: hidden;
+  background-color: #f2f2f2;
 
   &::before {
     position: absolute;
     bottom: 99%;
     left: -40px;
-    z-index: -1;
+    z-index: -2;
     transform: rotate(175deg);
     display: block;
     height: 425px;
@@ -28,13 +29,30 @@
   &::after {
     position: absolute;
     top: 0;
-    z-index: -2;
+    z-index: -1;
     display: block;
     height: 100%;
     width: 100%;
     content: "";
-    background: url("../img/advantages/screen.png") right 50% bottom -6px no-repeat, url("../img/advantages/phone.png") right 50% bottom -42px no-repeat;
-    background-color: #f2f2f2;
+    background: url("../img/advantages/advantages-mobile.png") right 50% bottom -43px no-repeat;
+
+    @media (min-width: 660px) {
+      background: url("../img/advantages/advantages-tablet.png") left 20px bottom -65px no-repeat;
+    }
+
+    @media (min-width: 770px) {
+      background: url("../img/advantages/advantages-tablet.png") left 22% bottom -65px no-repeat;
+    }
+
+
+    @media (min-width: 1200px) {
+      background: url("../img/advantages/advantages-desktop.png") right 50% top 5px no-repeat;
+    }
+  }
+
+  @media (min-width: 660px) {
+    padding-top: 71px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: 660px) {
