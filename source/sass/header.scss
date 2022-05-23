@@ -16,6 +16,21 @@
   @media (min-width: 660px) {
     height: 110px;
   }
+
+  &--nojs {
+    position: static;
+    height: auto;
+    padding-bottom: 0;
+
+    @media (min-width: 1200px) {
+      position: absolute;
+      top: 0;
+      z-index: 5;
+      padding-bottom: 23px;
+      background-color: transparentize(#000000, 0.7);
+      height: 110px;
+    }
+  }
 }
 
 .header__logo-box {
@@ -33,6 +48,16 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+
+  &--nojs {
+    flex-direction: column;
+    max-width: unset;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 }
 
 .header__burger {
@@ -55,6 +80,10 @@
   @media (min-width: 1200px) {
     display: none;
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .header__navigation {
@@ -69,6 +98,19 @@
 
     .header__navigation-item {
       background-color: #283645;
+    }
+  }
+
+  &--nojs {
+    position: unset;
+    padding-top: 50px;
+
+    @media (min-width: 1200px) {
+      padding-top: 0;
+    }
+
+    .header__navigation-item {
+      background-color: transparent;
     }
   }
 

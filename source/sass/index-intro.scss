@@ -2,12 +2,13 @@
   position: relative;
 
   @media (min-width: 660px) {
-    background: url("../img/intro/phone.png") 50% 100% no-repeat, url("../img/intro/screen.png") right 50% bottom 56px no-repeat, #1d384b url("../img/intro/intro-background.png") center / cover no-repeat;
+    background: url("../img/intro/index-phone-tablet.png") 50% 100% no-repeat, #1d384b url("../img/intro/index-background-tablet.png") center / cover no-repeat;
     padding-bottom: 82px;
     padding-left: 20px;
   }
 
   @media (min-width: 1200px) {
+    background: url("../img/intro/index-phone-desktop.png") 50% 100% no-repeat, #1d384b url("../img/intro/index-background-desktop.png") center / cover no-repeat;
     padding-left: 0;
     padding-bottom: 94px;
   }
@@ -16,7 +17,7 @@
 .index-intro__presentation {
   color: #ffffff;
   padding: 90px 0 315px;
-  background: url("../img/intro/phone.png") 50% 100% no-repeat, url("../img/intro/screen.png") right 50% bottom 56px no-repeat, #1d384b url("../img/intro/intro-background.png") center / cover no-repeat;
+  background: url("../img/intro/index-phone-mobile.png") 50% 100% no-repeat, #1d384b url("../img/intro/index-background-mobile.png") center / cover no-repeat;
   text-align: center;
 
   @media (min-width: 660px) {

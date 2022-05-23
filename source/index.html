@@ -8,15 +8,15 @@
   </head>
   <body>
     <div class="container">
-      <header class="header"> <!--  -active for menu-style-->
-        <div class="container container--inside header__inner">
+      <header class="header header--active header header--nojs"> <!--  mod active for menu, nojs for no js emulation-->
+        <div class="container container--inside header__inner header__inner--nojs"> <!-- mod nojs for no js emulation-->
           <div class="header__logo-box">
             <img class="header__logo" width="74" height="23" src="img/logo/header-logo-minimal.svg" alt="Приложение Pink">
           </div>
-          <button class="header__burger">
+          <button class="header__burger header__burger--active header__burger--nojs"> <!--  mod active for menu, nojs for no js emulation-->
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <nav class="header__navigation"> <!-- -active for menu-->
+          <nav class="header__navigation header__navigation--active header__navigation--nojs"> <!--  mod active for menu, nojs for no js emulation-->
             <ul class="header__navigation-list">
               <li class="header__navigation-item">
                 <a class="header__navigation-link" href="index.html">Главная</a>
